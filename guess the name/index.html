@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess the nearby number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Guess the Random Number </h1>
+        <p>Enter two numbers, and we'll determine who's closest to the generated number.</p>
+
+        <!-- Input fields for player guesses -->
+        <div class="input-container">
+            <input type="number" id="user1Number" placeholder="Player 1's Guess">
+            <input type="number" id="user2Number" placeholder="Player 2's Guess">
+            <div class ="pla">
+
+                <h3 id="p1">p. 1</h3>
+                  <h3 id="p2">  p. 2</h3>
+            </div>
+        </div>
+    
+       
+
+        <!-- Button to generate the random number and check the winner -->
+        <button id="startGameBtn" onclick="startGame()">Start Game</button>
+
+        <!-- Result of the game -->
+        <div id="result"></div>
+
+        <!-- New Game Button (hidden initially) -->
+        <button id="newGameBtn" onclick="newGame()" style="display:none;">New Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
